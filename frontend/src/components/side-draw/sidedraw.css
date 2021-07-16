@@ -1,0 +1,71 @@
+.sidedraw{
+    width: 100%;
+    height: 200px;
+    z-index: 200;
+    background-color: #6441a5;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    transform: translateY(-1000%);
+    transition: all 0.3s ease-out;
+
+}
+
+.sidedraw.show{
+    transform: translateY(0);
+}
+
+.sidedrawLinksContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.sidedrawLinks{
+    list-style: none;
+}
+
+.sidedrawLink{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.sidedraw:hover{
+    color: black;
+}
+
+.sidedrawShoppingCartBadge{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    background-color: limegreen;
+    color: white;
+}
+
+.sidedrawShoppingCartText{
+    margin-left: 5px;
+   
+}
+
+.sidedrawShopText{
+    margin-left: 5px;
+}
+
+@media (min-width: 760px){
+    .sidedraw{
+        display: none;
+    }
+}

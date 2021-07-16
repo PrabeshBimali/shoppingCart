@@ -1,0 +1,125 @@
+.navbarContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #6441a5;
+    height: 50px;
+    padding: 0 20px;
+    top: 0;
+    position: sticky;
+}
+
+.navbarLogoContainer{
+    flex: 3;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.navbarSearchContainer{
+    display: flex;
+    align-items: center;
+    flex: 5;
+    border-radius: 20px;
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.searchIcon{
+    margin-left: 5px;
+    font-size: 20px !important;
+}
+
+.searchInput{
+    width: 80%;
+    margin-left: 5px;
+    border: none;
+}
+
+.searchInput:focus{
+    outline: none;
+}
+
+.navbarLinksContainer{
+    flex: 4;
+    display: flex;
+    color: white;
+    margin-left: 50px;
+}
+
+.navbarLinks{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.navbarLink{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+.navbarLink:hover{
+   color: black;
+}
+
+.shoppingCartIcon{
+}
+
+.shoppingCartBadge{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    background-color: limegreen;
+    color: white;
+}
+
+.shoppingCartText{
+    margin-left: 5px;
+   
+}
+
+.shopText{
+    margin-left: 5px;
+}
+
+.hamburgerMenuContainer{
+    display: none;
+    color: #ffff;
+}
+
+.hamburgerMenu{
+    cursor: pointer;
+}
+
+@media (max-width: 760px){
+    .navbarLinksContainer{
+        display: none;
+    }
+
+    .navbarSearchContainer{
+        display: none;
+
+    }
+
+    .hamburgerMenuContainer{
+        display: flex;
+    }
+
+
+}
+
